@@ -24,3 +24,29 @@ C:\Users\CCLaptop\source\repos\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\re
 C:\Users\CCLaptop\source\repos\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.pdb
 C:\Users\CCLaptop\source\repos\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.genruntimeconfig.cache
 C:\Users\CCLaptop\source\repos\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\ref\BookStoreAdmin.dll
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\appsettings.Development.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\appsettings.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\BookStoreAdmin.staticwebassets.runtime.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\BookStoreAdmin.exe
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\BookStoreAdmin.deps.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\BookStoreAdmin.runtimeconfig.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\BookStoreAdmin.dll
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\bin\Debug\net6.0\BookStoreAdmin.pdb
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.csproj.AssemblyReference.cache
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.GeneratedMSBuildEditorConfig.editorconfig
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.AssemblyInfoInputs.cache
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.AssemblyInfo.cs
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.csproj.CoreCompileInputs.cache
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.MvcApplicationPartsAssemblyInfo.cache
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.RazorAssemblyInfo.cache
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.RazorAssemblyInfo.cs
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\staticwebassets.build.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\staticwebassets.development.json
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\scopedcss\bundle\BookStoreAdmin.styles.css
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\scopedcss\projectbundle\BookStoreAdmin.bundle.scp.css
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.dll
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\refint\BookStoreAdmin.dll
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.pdb
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\BookStoreAdmin.genruntimeconfig.cache
+G:\Data\ON SHOOL DATA\PRM391\BookStoreAdmin\BookStoreAdmin\obj\Debug\net6.0\ref\BookStoreAdmin.dll
