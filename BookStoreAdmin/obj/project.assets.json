@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\CCLaptop\\.nuget\\packages\\": {}
+    "C:\\Users\\tthan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CCLaptop\\source\\repos\\BookStoreAdmin\\BookStoreAdmin\\BookStoreAdmin.csproj",
+      "projectUniqueName": "G:\\Data\\ON SHOOL DATA\\PRM391\\BookStoreAdmin\\BookStoreAdmin\\BookStoreAdmin.csproj",
       "projectName": "BookStoreAdmin",
-      "projectPath": "C:\\Users\\CCLaptop\\source\\repos\\BookStoreAdmin\\BookStoreAdmin\\BookStoreAdmin.csproj",
-      "packagesPath": "C:\\Users\\CCLaptop\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CCLaptop\\source\\repos\\BookStoreAdmin\\BookStoreAdmin\\obj\\",
+      "projectPath": "G:\\Data\\ON SHOOL DATA\\PRM391\\BookStoreAdmin\\BookStoreAdmin\\BookStoreAdmin.csproj",
+      "packagesPath": "C:\\Users\\tthan\\.nuget\\packages\\",
+      "outputPath": "G:\\Data\\ON SHOOL DATA\\PRM391\\BookStoreAdmin\\BookStoreAdmin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\CCLaptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tthan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
