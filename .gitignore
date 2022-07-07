@@ -397,3 +397,7 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .vs/BookStoreAdmin/v17/.suo
+.vs/BookStoreAdmin/DesignTimeBuild/.dtbcache.v2
+.vs/BookStoreAdmin/v17/.futdcache.v1
+.vs/BookStoreAdmin/v17/.suo
+.vs/BookStoreAdmin/v17/fileList.bin
