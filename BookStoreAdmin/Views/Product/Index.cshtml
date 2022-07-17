@@ -1,7 +1,5 @@
-﻿@using BookStoreAdmin.Objects
-@model IEnumerable<UserAccount>
-@{
-    ViewData["Title"] = "Index";
+﻿@{
+    ViewData["Title"] = "Home Page";
 }
 
 <!-- Main Sidebar Container -->
@@ -16,7 +14,6 @@
     <div class="sidebar">
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
@@ -24,12 +21,12 @@
                     <a asp-controller="Home" asp-action="Index" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Dashboard
+                            Dashboards
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a asp-controller="User" asp-action="Index" class="nav-link active">
+                    <a asp-controller="User" asp-action="Index" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             User
@@ -37,7 +34,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a asp-controller="Product" asp-action="Index" class="nav-link">
+                    <a asp-controller="Product" asp-action="Index" class="nav-link active">
                         <i class="nav-icon fas fa-suitcase"></i>
                         <p>
                             Product
@@ -58,12 +55,12 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">User Manage</h1>
+                    <h1 class="m-0">Dashboard</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li class="breadcrumb-item active">User</li>
+                        <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item active">Product</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -72,22 +69,23 @@
     <!-- Main Content -->
     <section class="content">
         <div class="container-fluid">
+
             <!-- Main row -->
             <div class="row">
                 <div class="col-12">
                     <div class="card">
-                        <div class="card-header col-12">
+                        <div class="card-header">
                             <div class="col-6">
                                 <h3 class="card-title">Order Detail</h3>
                             </div>
                             <div class="col-6 float-right">
-                                <button class="btn btn-primary float-right" data-toggle="modal" data-target="#addUser"><i class="fas fa-plus"> Add User</i></button>
+                                <button class="btn btn-primary float-right" data-toggle="modal" data-target="#addProduct"><i class="fas fa-plus"> Add Product</i></button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="addUser" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal fade" id="addProduct" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                     <div class="modal-dialog">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="staticBackdropLabel">Add User</h5>
+                                                <h5 class="modal-title" id="staticBackdropLabel">Add Product</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -107,22 +105,22 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">User Name:</label>
+                                                        <label for="recipient-name" class="col-form-label">Product Name:</label>
                                                         <input type="text" class="form-control" id="recipient-name" />
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">Phone:</label>
+                                                        <label for="recipient-name" class="col-form-label">Book:</label>
                                                         <input type="text" class="form-control" id="recipient-name" />
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="recipient-name" class="col-form-label">Gmail:</label>
+                                                        <label for="recipient-name" class="col-form-label">Book ID:</label>
                                                         <input type="text" class="form-control" id="recipient-name" />
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard</button>
-                                                <button type="button" class="btn btn-primary">Add User</button>
+                                                <button type="button" class="btn btn-primary">Add Product</button>
                                             </div>
                                         </div>
                                     </div>
@@ -130,30 +128,102 @@
                                 <!-- /.modal -->
                             </div>
                         </div>
+
                         <!-- /.card-header -->
                         <div class="card-body">
                             <table id="example2" class="table table-bordered table-hover">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Tên Người Dùng</th>
-                                        <th>Số Điện Thoại</th>
-                                        <th>Gmail</th>
-                                        <th>UserName</th>
+                                        <th>BookID</th>
+                                        <th>BookName</th>
+                                        <th>Author</th>
+                                        <th>CategoryID</th>
+                                        <th>CRUD</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach( var obj in Model)
-                                    {
-                                        <tr>
-                                        <td>@obj.UserId</td>
-                                        <td>@obj.Name</td>
-                                        <td>@obj.Phone</td>
-                                        <td>@obj.Gmail</td>
-                                        <td>@obj.UserName</td>
-                                        </tr>
-                                    }
-                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Trident</td>
+                                        <td>
+                                            Internet
+                                            Explorer 4.0
+                                        </td>
+                                        <td>Win 95+</td>
+                                        <td> 4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Trident</td>
+                                        <td>
+                                            Internet
+                                            Explorer 5.0
+                                        </td>
+                                        <td>Win 95+</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Trident</td>
+                                        <td>
+                                            Internet
+                                            Explorer 5.5
+                                        </td>
+                                        <td>Win 95+</td>
+                                        <td>5.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Trident</td>
+                                        <td>
+                                            Internet
+                                            Explorer 6
+                                        </td>
+                                        <td>Win 98+</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Trident</td>
+                                        <td>Internet Explorer 7</td>
+                                        <td>Win XP SP2+</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Trident</td>
+                                        <td>AOL browser (AOL desktop)</td>
+                                        <td>Win XP</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Gecko</td>
+                                        <td>Firefox 1.5</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Gecko</td>
+                                        <td>Firefox 2.0</td>
+                                        <td>Win 98+ / OSX.2+</td>
+                                        <td>1.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Gecko</td>
+                                        <td>Firefox 3.0</td>
+                                        <td>Win 2k+ / OSX.3+</td>
+                                        <td>1.9</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
