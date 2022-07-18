@@ -53,7 +53,7 @@
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div><!-- /.col -->
@@ -63,247 +63,53 @@
     <!-- Main Content -->
     <section class="content">
         <div class="container-fluid">
-            <!-- Small boxes (Stat box) -->
-            <div class="row">
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-info">
-                        <div class="inner">
-                            <h3>150</h3>
-
-                            <p>Đơn hàng</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-stats-bars"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-success">
-                        <div class="inner">
-                            <h3>53</h3>
-
-                            <p>Sản phẩm</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-bag"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-warning">
-                        <div class="inner">
-                            <h3>44</h3>
-
-                            <p>Danh mục</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-pie-graph"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-danger">
-                        <div class="inner">
-                            <h3>65</h3>
-
-                            <p>Người dùng</p>
-                        </div>
-                        <div class="icon">
-                            <i class="ion ion-person-add"></i>
-                        </div>
-                    </div>
-                </div>
-                <!-- ./col -->
-            </div>
-            <!-- /.row -->
-
             <!-- Main row -->
             <div class="row">
-              <div class="col-12">
-                <div class="card">
-                    <a asp-controller="Home" asp-action="Create">Add New Book</a>
-                  <div class="card-header">
-                    <h3 class="card-title">Product Detail</h3>
-                  </div>
-                  <!-- /.card-header -->
-                  <div class="card-body">
-                    <table id="example2" class="table table-bordered table-hover">
-                      <thead>
-                      <tr>
-                        <th>Mã Sản Phẩm</th>
-                        <th>Tên Sản Phẩm</th>
-                        <th>Giá Thành</th>
-                        <th>Nhà Xuất Bản</th>
-                        <th>Tồn Kho</th>
-                        
-                      </tr>
-                      </thead>
-                      <tbody>
-                          @foreach(var obj in Model){
-                      <tr>
-                        <td>@obj.BookId</td>
-                        <td>@obj.BookName</td>
-                        <td>@obj.Price</td>
-                        <td>@obj.Publisher</td>
-                        <td>@obj.Inventory</td>
-                        <td><a asp-controller="Home"asp-action = "Edit" asp-route-id=@obj.BookId>Edit</a>  </td>
-                        <td><a asp-controller="Home"asp-action = "Delete" asp-route-id=@obj.BookId>Delete</a>  </td>
-                      </tr>
-                          }
-                      
-
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 4.0
-                        </td>
-                        <td>ed ward+</td>
-                        <td>Win 95+</td>
-                        <td> 4</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 5.0
-                        </td>
-                        <td>ed ward+</td>
-                        <td>Win 95+</td>
-                        <td>5</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 5.5
-                        </td>
-                        <td>ed ward+</td>
-                        <td>Win 95+</td>
-                        <td>5.5</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet
-                          Explorer 6
-                        </td>
-                        <td>ed ward+</td>
-                        <td>Win 98+</td>
-                        <td>6</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>Internet Explorer 7</td>
-                        <td>ed ward+</td>
-                        <td>Win XP SP2+</td>
-                        <td>7</td>
-                      </tr>
-                      <tr>
-                        <td>Trident</td>
-                        <td>AOL browser (AOL desktop)</td>
-                        <td>ed ward+</td>
-                        <td>Win XP</td>
-                        <td>6</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 1.0</td>
-                        <td>ed ward+</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.7</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 1.5</td>
-                        <td>ed ward+</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 2.0</td>
-                        <td>ed ward+</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Firefox 3.0</td>
-                        <td>ed ward+</td>
-                        <td>Win 2k+ / OSX.3+</td>
-                        <td>1.9</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Camino 1.0</td>
-                        <td>ed ward+</td>
-                        <td>OSX.2+</td>
-                        <td>1.8</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Camino 1.5</td>
-                        <td>ed ward+</td>
-                        <td>OSX.3+</td>
-                        <td>1.8</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Netscape 7.2</td>
-                        <td>ed ward+</td>
-                        <td>Win 95+ / Mac OS 8.6-9.2</td>
-                        <td>1.7</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Netscape Browser 8</td>
-                        <td>ed ward+</td>
-                        <td>Win 98SE+</td>
-                        <td>1.7</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Netscape Navigator 9</td>
-                        <td>ed ward+</td>
-                        <td>Win 98+ / OSX.2+</td>
-                        <td>1.8</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Mozilla 1.0</td>
-                        <td>ed ward+</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Mozilla 1.1</td>
-                        <td>ed ward+</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td>1.1</td>
-                      </tr>
-                      <tr>
-                        <td>Gecko</td>
-                        <td>Mozilla 1.2</td>
-                        <td>ed ward+</td>
-                        <td>Win 95+ / OSX.1+</td>
-                        <td>1.2</td>
-                      </tr>
-                      
-                      </tbody>
-                    </table>
-                  </div>
-                  <!-- /.card-body -->
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="col-12">
+                                <h3 class="card-title col-6" style="margin-top:9px ;">Product Detail</h3>
+                                <div class=" float-right col-6">
+                                    <a class="btn btn-primary float-right" asp-controller="Home" asp-action="Create"><i class="fas fa-plus"></i> New Book</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="example2" class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Mã Sản Phẩm</th>
+                                        <th>Tên Sản Phẩm</th>
+                                        <th>Giá Thành</th>
+                                        <th>Nhà Xuất Bản</th>
+                                        <th>Tồn Kho</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var obj in Model)
+                                    {
+                                        <tr>
+                                            <td>@obj.BookId</td>
+                                            <td>@obj.BookName</td>
+                                            <td>@obj.Price</td>
+                                            <td>@obj.Publisher</td>
+                                            <td>@obj.Inventory</td>
+                                            <td><a class="btn btn-success" asp-controller="Home" asp-action="Edit" asp-route-id=@obj.BookId>Edit</a>  </td>
+                                            <td><a class="btn btn-danger" asp-controller="Home" asp-action="Delete" asp-route-id=@obj.BookId>Delete</a>  </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
-                <!-- /.card -->
-              </div>
-          <!-- /.col -->
-        </div>
-        <!-- /.row (main row) -->
+                <!-- /.col -->
+            </div>
+            <!-- /.row (main row) -->
 
         </div><!-- /.container-fluid -->
     </section>
